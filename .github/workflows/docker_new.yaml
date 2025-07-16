@@ -19,12 +19,7 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      # Step 3: Log in to GitHub Container Registry (Optional)
-      # Skip if not using GitHub packages
-
-      # Step 4: Build Docker image
+      # Step 3: Build Docker image
       - name: Build Docker image
         run: |
-          docker build -t mydockerimage:v1 .
-
-      # Step 5: (Optional) Push to registry (like Docker Hub or ACR)
+          docker build -t mynodeapp:v1 .
